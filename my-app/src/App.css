@@ -80,3 +80,7 @@ a {
   color: var(--secondary-color);
   font-size: 25px;
 }
+ .error-message {
+  font-size: 10px;
+  color: rgb(170, 14, 14);
+ }
