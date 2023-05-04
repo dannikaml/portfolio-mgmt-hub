@@ -1,0 +1,22 @@
+{
+  "name": "My Portfolio App",
+  "short_name": "Portfolio",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#3C4245",
+  "background_color": "#719192",
+  "description": "My portfolio app to showcase my projects and skills.",
+  "icons": [
+    {
+      "src": "images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+
