@@ -70,6 +70,10 @@ THEN I see a link to a downloadable resume and a list of the developer’s profi
 WHEN I view the footer
 THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter) 
 ```
+### Deployed Site: 
+[https://dannikaml.github.io/portfolio-mgmt-hub/](https://dannikaml.github.io/portfolio-mgmt-hub/)
+
+![screenshot](./src/images/Screenshot%202023-05-04%20230114.png)
 
 ### Sources:
 
