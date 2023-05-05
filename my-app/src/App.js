@@ -5,6 +5,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 // import Resume from "./components/Resume";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -50,8 +51,8 @@ function App() {
       {showAbout && <About />}
       {showProjects && <Projects />}
       {showContact && <Contact />}
-      {/* {showResume && <Resume />}
-      <Footer /> */}
+      {/* {showResume && <Resume />} */}
+      <Footer />
     </div>
   );
 }

@@ -7,7 +7,7 @@ function Header({ toggleAbout, toggleProjects, toggleContact, toggleResume }) {
         <nav>
           <ul>
             <a href="#about" onClick={toggleAbout}>
-                About
+                About Me
             </a>
             <a href="#projects" onClick={toggleProjects}>
                 Projects
