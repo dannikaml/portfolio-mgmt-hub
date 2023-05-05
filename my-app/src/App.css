@@ -124,3 +124,10 @@ section {
   color: var(--text-color);
 }
 
+.project-name:hover {
+  transform: translate(0, -5px);
+}
+
+.download {
+  font-size: xx-large;
+}

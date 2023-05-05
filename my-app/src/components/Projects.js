@@ -1,51 +1,87 @@
-import React from "react";
+import React, { useState } from "react";
 
 const projectData = [
   {
-    name: "Project 1",
+    name: "Portfolio Hub",
     githubLink: "https://github.com/dannikaml/portfolio-mgmt-hub",
-    image: "https://picsum.photos/id/1018/200/200",
+    image: "https://picsum.photos/id/1018/300/300",
   },
   {
-    name: "Project 2",
+    name: "Tech Blog!",
     githubLink: "https://github.com/dannikaml/Blogged-MVC",
-    image: "https://picsum.photos/id/1021/200/200",
+    image: "https://picsum.photos/id/1021/300/300",
   },
   {
-    name: "Project 3",
+    name: "Book Hub",
     githubLink: "https://github.com/dannikaml/game-hub",
-    image: "https://picsum.photos/id/1040/200/200",
+    image: "https://picsum.photos/id/1040/300/300",
   },
   {
-    name: "Project 4",
-    githubLink: "https://github.com/dannikaml/portfolio-mgmt-hub",
-    image: "https://picsum.photos/id/1069/200/200",
+    name: "Employee Tracker",
+    githubLink: "https://github.com/dannikaml/sql-tracked",
+    image: "https://picsum.photos/id/1069/300/300",
   },
   {
-    name: "Project 5",
-    githubLink: "https://github.com/dannikaml/Blogged-MVC",
-    image: "https://picsum.photos/id/1070/200/200",
+    name: "Team Profile Generator",
+    githubLink: "https://github.com/dannikaml/oop-pain",
+    image: "https://picsum.photos/id/1070/300/300",
   },
   {
-    name: "Project 6",
-    githubLink: "https://github.com/dannikaml/game-hub",
-    image: "https://picsum.photos/id/1084/200/200",
+    name: "Password Generator",
+    githubLink: "https://github.com/dannikaml/password-generator",
+    image: "https://picsum.photos/id/1084/300/300",
   },
-  
 ];
 
 function Projects(props) {
+  const [hoveredProject, setHoveredProject] = useState(null);
+
+  const handleMouseEnter = (project) => {
+    setHoveredProject(project);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredProject(null);
+  };
+
   return (
     <div>
       {projectData.map((project, index) => (
-        <a href={project.githubLink} target="_blank" rel="noreferrer" key={index}>
-          <img src={project.image} alt={project.name} />
-        </a>
+        <div
+          key={index}
+          onMouseEnter={() => handleMouseEnter(project)}
+          onMouseLeave={handleMouseLeave}
+          style={{ position: "relative", display: "inline-block" }}
+        >
+          <a href={project.githubLink} target="_blank" rel="noreferrer">
+            <img src={project.image} alt={project.name} />
+          </a>
+          {hoveredProject === project && (
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <p
+                className="project-name"
+                style={{ color: "white", fontWeight: "bold" }}
+              >
+                {project.name}
+              </p>
+            </div>
+          )}
+        </div>
       ))}
     </div>
   );
 }
 
 export default Projects;
-
-

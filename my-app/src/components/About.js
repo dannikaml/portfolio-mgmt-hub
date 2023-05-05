@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AvatarImage from "../images/avatar.png";
 
 function About() {
   const [showAbout, setShowAbout] = useState(true);
@@ -11,6 +12,9 @@ function About() {
     <section id="about">
       {showAbout ? (
         <div>
+          <div style={{ textAlign: "center" }}>
+            <img src={AvatarImage} alt="Avatar" style={{ width: "200px" }} />
+          </div>
           <h2>About Me</h2>
           <p>I am a new developer who recently completed the Full Stack Bootcamp at Vanderbilt University. 
             My passion for learning and desire to pursue a career in web development has led me on the pursuit of proficiency in the MERN stack, 
@@ -21,8 +25,8 @@ function About() {
             where I can grow both personally and professionally. I am a highly motivated individual who is committed to staying up-to-date with 
             the latest technologies and best practices in this dynamic field. I am eager to contribute my skills and work collaboratively with a
             team to create innovative, user-friendly applications.
-            </p>
-            <p>Completed a comprehensive curriculum in HTML5, CSS3, JavaScript, jQuery, Bootstrap, Express.js, React.js, Node.js, Database Theory, MongoDB, MySQL, Command Line, and Git.</p>
+          </p>
+          <p>Completed a comprehensive curriculum in HTML5, CSS3, JavaScript, jQuery, Bootstrap, Express.js, React.js, Node.js, Database Theory, MongoDB, MySQL, Command Line, and Git.</p>
         </div>
       ) : (
         <a href="#about" onClick={handleAboutClick}>
@@ -34,3 +38,4 @@ function About() {
 }
 
 export default About;
+

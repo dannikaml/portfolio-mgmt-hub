@@ -22,6 +22,8 @@ w3schools:
 - https://www.w3schools.com/react/react_render.asp
 - https://www.w3schools.com/react/react_components.asp#:~:text=Components%20are%20independent%20and%20reusable,will%20concentrate%20on%20Function%20components
 - https://www.w3schools.com/react/react_usestate.asp
+- https://www.w3schools.com/jsref/event_onmouseenter.asp
+- https://www.w3schools.com/jsref/event_onmouseleave.asp
 
 fontawesome:
 - https://fontawesome.com/docs/web/use-with/react/add-icons#add-icons-globally
