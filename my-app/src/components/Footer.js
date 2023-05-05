@@ -11,7 +11,6 @@ function Footer() {
        
       </div>
       <div className="credit">
-        Created by Dannika Long
       </div>
     </footer>
   );

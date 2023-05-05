@@ -21,7 +21,8 @@ function About() {
             where I can grow both personally and professionally. I am a highly motivated individual who is committed to staying up-to-date with 
             the latest technologies and best practices in this dynamic field. I am eager to contribute my skills and work collaboratively with a
             team to create innovative, user-friendly applications.
-</p>
+            </p>
+            <p>Completed a comprehensive curriculum in HTML5, CSS3, JavaScript, jQuery, Bootstrap, Express.js, React.js, Node.js, Database Theory, MongoDB, MySQL, Command Line, and Git.</p>
         </div>
       ) : (
         <a href="#about" onClick={handleAboutClick}>
