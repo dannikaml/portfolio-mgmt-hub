@@ -27,8 +27,8 @@ const projectData = [
     image: "https://picsum.photos/id/1070/300/300",
   },
   {
-    name: "Password Generator",
-    githubLink: "https://github.com/dannikaml/password-generator",
+    name: "Tasks Mastered",
+    githubLink: "https://github.com/dannikaml/tasks-mastered",
     image: "https://picsum.photos/id/1084/300/300",
   },
 ];
