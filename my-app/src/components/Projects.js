@@ -2,6 +2,11 @@ import React, { useState } from "react";
 
 const projectData = [
   {
+    name: "Tasks Mastered",
+    githubLink: "https://github.com/dannikaml/tasks-mastered",
+    image: "https://picsum.photos/id/1084/300/300",
+  },
+  {
     name: "Portfolio Hub",
     githubLink: "https://github.com/dannikaml/portfolio-mgmt-hub",
     image: "https://picsum.photos/id/1018/300/300",
@@ -26,11 +31,7 @@ const projectData = [
     githubLink: "https://github.com/dannikaml/oop-pain",
     image: "https://picsum.photos/id/1070/300/300",
   },
-  {
-    name: "Tasks Mastered",
-    githubLink: "https://github.com/dannikaml/tasks-mastered",
-    image: "https://picsum.photos/id/1084/300/300",
-  },
+  
 ];
 
 function Projects(props) {
